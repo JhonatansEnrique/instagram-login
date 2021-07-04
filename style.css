@@ -5,6 +5,11 @@
     text-decoration: none;
     font-family: sans-serif;
     font-size: 14px;
+    
+}
+
+.tudo {
+    align-items: center;
 }
 
 body {
@@ -13,16 +18,26 @@ body {
     background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
-    display: flex;
+    display: block;
     justify-content: center;
+    align-content: center;
+    
+}
+
+.article {
+    padding: 0;
+    align-content: center;
+    align-items: center;
 }
 
 .instagram-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 60%;
-    height: 100vh;
+    width: 50%;
+    height: 90vh;
+    margin: auto;
+    max-width: 900px;
 }
 
 .instagram-phone {
@@ -51,7 +66,8 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
-    width: 100%;
+    width: 90%;
+    max-width: 350px;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
 }
@@ -102,6 +118,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 550px;
     padding: 1.3rem 0;
 }
 
@@ -127,6 +144,37 @@ body {
     background-image: url(./img/googleplay-button.png);
 }
 
+footer {
+    padding: 6%;
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;       
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.ul {
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+a {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(160, 160, 160);
+}
+
 /* media queries */
 
 @media (max-width: 1024px) {
@@ -135,7 +183,19 @@ body {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1321px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .group {
+        width: 80%;
+    }
+
+   
+}
+
+@media (max-width: 771px) {
 
     body {
         background-color: #ffffff;
@@ -156,4 +216,11 @@ body {
     .group {
         border: 1px solid transparent;
     }
+
+    .get-the-app {
+        max-width: 400px;
+    }
 }
+
+
+
